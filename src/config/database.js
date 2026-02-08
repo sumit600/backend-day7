@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 function connetTODb(){
-    mongoose.connect("mongodb+srv://Sumit:BWzoksx8qHliRFEE@cluster0.pxklaos.mongodb.net/day7")
+    mongoose.connect(process.env.MONGO_URI)
     .then(()=>{
         console.log("connted to DB")
     })

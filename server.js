@@ -1,6 +1,6 @@
 
 
-
+require("dotenv").config()
 const mongoose = require("mongoose")
 app = require("./src/app")
 
